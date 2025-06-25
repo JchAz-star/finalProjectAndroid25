@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckg"
+    tools:context=".FindDoctorActivity">
+
+    <TextView
+        android:id="@+id/DoctorsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="Your Doctors"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="italic"/>
+
+    <GridLayout
+        android:id="@+id/DoctorsMainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/DoctorsHeader"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/FamilyPhysicisnBtn"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Family Physician" />
+
+        <Button
+            android:id="@+id/DieticianBtn"
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:text="Dietician" />
+
+        <Button
+            android:id="@+id/DentistBtn"
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Dentist" />
+
+        <Button
+            android:id="@+id/SurgeonBtn"
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Surgeon" />
+
+        <Button
+            android:id="@+id/CardoilogostBtn"
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Cardiologist" />
+
+        <Button
+            android:id="@+id/GoBackFromDoctorsBtn"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="go Back" />
+    </GridLayout>
+
+
+
+
+
+</RelativeLayout>

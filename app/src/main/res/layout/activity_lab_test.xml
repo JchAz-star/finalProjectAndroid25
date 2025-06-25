@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckg"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LabTestActivity">
+
+    <TextView
+        android:id="@+id/WelcomeLabTestView"
+        android:text="Welcome to Lab Test Page"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#6200EE"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/yourTestTxtView"
+        android:text="Your Tests Today Are :"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#6200EE"
+        app:layout_constraintTop_toBottomOf="@id/WelcomeLabTestView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        app:layout_constraintTop_toBottomOf="@id/yourTestTxtView"
+
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:layout_marginTop="24dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/btnChangeDocOpLabTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change doctors opinion???"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="60dp"
+        />
+
+    <Button
+        android:id="@+id/btnLabTestGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
